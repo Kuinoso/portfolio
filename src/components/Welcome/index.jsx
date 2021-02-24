@@ -16,9 +16,8 @@ export default function Welcome() {
                 <div className={classes.firstLine}>
                     <h1>Greetings, I am</h1>
                     <h1 className={classes.name}> Leonardo Kuinoso</h1>
-                    <h1>.</h1>
                 </div>
-                <h1>I am a full stack web developer.</h1>
+                <h1>I am a full stack web developer</h1>
                 <Button variant="outlined" className={classes.button}>
                     <p className={classes.buttonText}>My work</p>
                     <ArrowForwardIcon className={classes.arrow}/>

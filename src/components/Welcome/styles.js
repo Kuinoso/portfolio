@@ -15,20 +15,32 @@ export const useStyles = makeStyles((theme) => ({
         width: '100%',
         height: '100%',
         objectFit: 'cover',
-        opacity: '0.3'
+        opacity: '0.3',
     },
     presentation: {
         color: 'white',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        [theme.breakpoints.down('xs')]: {
+            width: 300,
+            margin: 'auto',
+            textAlign: 'center',
+        },
     },
     firstLine: {
         display: 'flex',
+        [theme.breakpoints.down('xs')]: {
+            flexDirection: 'column',
+            padding: 0,
+        },
     },
     name: {
         marginLeft: 7,
         color: '#F9DE59',
+        [theme.breakpoints.down('xs')]: {
+            marginLeft: 0,
+        },
     },
     button: {
         marginTop: 20,
