@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
         position: 'relative',
         width: '100vw',
         height: '100vh',
-        backgroundColor: 'black',
+        backgroundColor: '#252934',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -22,6 +22,7 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        zIndex: 1,
         [theme.breakpoints.down('xs')]: {
             width: 300,
             margin: 'auto',
@@ -54,7 +55,26 @@ export const useStyles = makeStyles((theme) => ({
             borderColor: '#C33124',
         },
     },
+    buttonText: {
+        textDecoration: 'none',
+    },
     arrow: {
         margin: '0 0 5px 5px',
+    },
+    select: {
+        color: '#F6F7F7',
+        position: 'absolute',
+        top: 0,
+        width: 90,
+        '& .MuiSelect-icon': {
+            color: '#F6F7F7',
+        },
+        '&:hover': {
+            color: '#F98365',
+            cursor: 'pointer',
+            '& .MuiSelect-icon': {
+                color: '#F98365',
+            },
+        },
     },
 }));
