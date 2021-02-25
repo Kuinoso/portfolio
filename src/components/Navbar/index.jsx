@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import Select from '@material-ui/core/Select';
 import { useStyles } from './styles.js';
 
 export default function Navbar({ language, setLanguage }) {
@@ -17,7 +16,7 @@ export default function Navbar({ language, setLanguage }) {
                     <Link to={'/portfolio/about'}>
                         <Button
                             className={classes.navButton}
-                            style={{ color: location.pathname.includes('about') && '#F9DE59' }}
+                            style={{ color: location.pathname.includes('about') && '#E8A628' }}
                         >
                             {language === 'english' ? 'About' : 'Sobre mí'}
                         </Button>
@@ -25,7 +24,7 @@ export default function Navbar({ language, setLanguage }) {
                     <Link to={'/portfolio/projects'}>
                         <Button
                             className={classes.navButton}
-                            style={{ color: location.pathname.includes('projects') && '#F9DE59' }}
+                            style={{ color: location.pathname.includes('projects') && '#E8A628' }}
                         >
                             {language === 'english' ? 'Projects' : 'Proyectos'}
                         </Button>
@@ -33,7 +32,7 @@ export default function Navbar({ language, setLanguage }) {
                     <Link to={'/portfolio/contact'}>
                         <Button
                             className={classes.navButton}
-                            style={{ color: location.pathname.includes('contact') && '#F9DE59' }}
+                            style={{ color: location.pathname.includes('contact') && '#E8A628' }}
                         >
                             {language === 'english' ? 'Contact' : 'Contacto'}
                         </Button>

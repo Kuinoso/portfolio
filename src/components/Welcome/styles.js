@@ -70,10 +70,10 @@ export const useStyles = makeStyles((theme) => ({
             color: '#F6F7F7',
         },
         '&:hover': {
-            color: '#F98365',
+            color: '#C33124',
             cursor: 'pointer',
             '& .MuiSelect-icon': {
-                color: '#F98365',
+                color: '#C33124',
             },
         },
     },
