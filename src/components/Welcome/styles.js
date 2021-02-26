@@ -76,5 +76,8 @@ export const useStyles = makeStyles((theme) => ({
                 color: '#C33124',
             },
         },
+        [theme.breakpoints.down('xs')]: {
+            right: 140,
+        },
     },
 }));
