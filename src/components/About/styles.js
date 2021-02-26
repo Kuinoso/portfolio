@@ -1,14 +1,15 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { BorderAllRounded } from '@material-ui/icons';
 
 export const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '83vh',
+        height: '83vh',
+        overflow: 'hidden',
         [theme.breakpoints.down('xs')]: {
             flexDirection: 'column',
+            overflow: 'auto',
         },
     },
     info: {
@@ -23,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             width: 320,
             margin: 'auto',
-            marginTop: 50,
+            marginTop: 550,
         },
     },
     title: {
