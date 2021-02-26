@@ -1,4 +1,7 @@
 body {
   margin: 0;
   font-family: "Aceh-Light";
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }

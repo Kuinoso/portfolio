@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '83vh',
+        height: '82vh',
         overflow: 'hidden',
         [theme.breakpoints.down('xs')]: {
             flexDirection: 'column',
@@ -24,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             width: 320,
             margin: 'auto',
-            marginTop: 550,
+            marginTop: 580,
         },
     },
     title: {

@@ -15,7 +15,7 @@ export default function Navbar({ language, setLanguage }) {
     useEffect(() => {
         setTimeout(() => {
             setEnter(true);
-        }, 200);
+        }, 190);
     });
 
     return (
