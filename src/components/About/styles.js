@@ -6,7 +6,10 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '83vh',
+        minHeight: '83vh',
+        [theme.breakpoints.down('xs')]: {
+            flexDirection: 'column',
+        },
     },
     info: {
         display: 'flex',
@@ -17,6 +20,11 @@ export const useStyles = makeStyles((theme) => ({
         height: '100%',
         width: '30vw',
         marginRight: '5vh',
+        [theme.breakpoints.down('xs')]: {
+            width: 320,
+            margin: 'auto',
+            marginTop: 50,
+        },
     },
     title: {
         color: '#252934',
@@ -27,14 +35,21 @@ export const useStyles = makeStyles((theme) => ({
         width: '75%',
         marginTop: 0,
         fontSize: '1.2rem',
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+        },
     },
     profilePic: {
         width: 200,
     },
     links: {
         display: 'flex',
-        width: '25%',
+        width: '30%',
         justifyContent: 'space-between',
+        [theme.breakpoints.down('xs')]: {
+            marginTop: 10,
+            width: '50%',
+        },
     },
     redirect: {
         color: '#E8A628',
@@ -55,9 +70,18 @@ export const useStyles = makeStyles((theme) => ({
         height: '100%',
         width: '30vw',
         marginLeft: '5vh',
+        [theme.breakpoints.down('xs')]: {
+            width: 300,
+            margin: 'auto',
+            marginTop: 100,
+            paddingBottom: 50
+        },
     },
     skillBox: {
         marginTop: 50,
+        [theme.breakpoints.down('xs')]: {
+            marginTop: 5
+        },
     },
     skillSet: {
         display: 'flex',
@@ -78,13 +102,23 @@ export const useStyles = makeStyles((theme) => ({
             border: '1px solid #C33124',
             boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
         },
+        [theme.breakpoints.down('xs')]: {
+            width: 80,
+            height: 80,
+        },
     },
     pic: {
         height: 50,
         marginTop: 10,
+        [theme.breakpoints.down('xs')]: {
+            height: 40,
+        },
     },
     skillText: {
         marginTop: 0,
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '0.8rem'
+        },
     },
     red: {
         textDecoration: 'none',

@@ -13,5 +13,8 @@ export const useStyles = makeStyles((theme) => ({
         '&:hover': {
             color: '#C33124',
         },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '0.9rem',
+        },
     },
 }));
