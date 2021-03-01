@@ -24,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             width: 320,
             margin: 'auto',
-            marginTop: 580,
+            marginTop: 650,
         },
     },
     title: {
