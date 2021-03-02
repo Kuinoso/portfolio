@@ -11,8 +11,6 @@
   <a href="#credits">Credits</a> 
 </p>
 
-<img src="https://i.imgur.com/YINdQLe.png" alt="Demo">
-
 ## Key Features
 
 * Developed 100% on front-end.
