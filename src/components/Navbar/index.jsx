@@ -23,7 +23,7 @@ export default function Navbar({ language, setLanguage }) {
             <div className={classes.root}>
                 <AppBar position="static">
                     <Toolbar className={classes.toolbar}>
-                        <Link to={'/portfolio/about'}>
+                        <Link to={'/portfolio/about'} className={classes.link}>
                             <Button
                                 className={classes.navButton}
                                 style={{ color: location.pathname.includes('about') && '#E8A628' }}
@@ -31,7 +31,7 @@ export default function Navbar({ language, setLanguage }) {
                                 {language === 'english' ? 'About' : 'Sobre mí'}
                             </Button>
                         </Link>
-                        <Link to={'/portfolio/projects'}>
+                        <Link to={'/portfolio/projects'} className={classes.link}>
                             <Button
                                 className={classes.navButton}
                                 style={{ color: location.pathname.includes('projects') && '#E8A628' }}
@@ -39,7 +39,7 @@ export default function Navbar({ language, setLanguage }) {
                                 {language === 'english' ? 'Projects' : 'Proyectos'}
                             </Button>
                         </Link>
-                        <Link to={'/portfolio/contact'}>
+                        <Link to={'/portfolio/contact'} className={classes.link}>
                             <Button
                                 className={classes.navButton}
                                 style={{ color: location.pathname.includes('contact') && '#E8A628' }}
