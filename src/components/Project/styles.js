@@ -58,7 +58,6 @@ export const useStyles = makeStyles((theme) => ({
         color: '#E8A628',
         border: '1px solid #E8A628',
         borderRadius: 5,
-        paddingTop: 10,
         margin: '0 5px',
         '&:hover': {
             backgroundColor: '#C33124',
@@ -79,5 +78,8 @@ export const useStyles = makeStyles((theme) => ({
         '&:hover': {
             color: '#C33124',
         },
+    },
+    link: {
+        textDecoration: 'none',
     },
 }));

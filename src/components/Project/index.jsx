@@ -31,13 +31,13 @@ export default function Project({ title, description, website, github, images, t
                     <p className={classes.text}>{description}</p>
                     <div className={classes.buttons}>
                         {website &&
-                            <a href={website} target='blank' >
+                            <a href={website} target='blank' className={classes.link}>
                                 <Button size="small" className={classes.button}>
                                     {language === 'english' ? 'Webiste' : 'Sitio Web'}
                                 </Button>
                             </a>
                         }
-                        <a href={github} target='blank' >
+                        <a href={github} target='blank' className={classes.link}>
                             <Button size="small" className={classes.button}>
                                 {language === 'english' ? 'Repository' : 'Repositorio'}
                             </Button>
