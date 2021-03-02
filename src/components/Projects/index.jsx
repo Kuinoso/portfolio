@@ -37,6 +37,8 @@ export default function Projects({ language }) {
     const [gOpen, setGOpen] = useState(false);
     const [hOpen, setHOpen] = useState(false);
 
+    const images = [arkaven1, arkaven2, arkaven3, sup, sup2, geek, geek2, geek3, henry, henry2, henry3, cssP, expressP, htmlP, materialP, mongoP, nodeP, postgressP, reactP, reduxP];
+
 
     const arkavenM = [arkaven1, arkaven2, arkaven3];
     const superM = [sup, sup2];
@@ -54,6 +56,11 @@ export default function Projects({ language }) {
     const geekD = language === 'english' ? 'E-commerce where you can search, view and buy geek products.' : 'Tienda online donde se pueden buscar y comprar productos geek.';
 
     useEffect(() => {
+        images.forEach((image) => {
+            const img = new Image();
+            img.src = image;
+        });
+
         setTimeout(() => {
             setEnter(true);
         }, 200);

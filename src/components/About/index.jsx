@@ -19,12 +19,19 @@ import reduxP from '../../media/redux.png';
 export default function About({ language }) {
     const classes = useStyles();
 
+    const images = [profileP, cssP, expressP, htmlP, materialP, mongoP, nodeP, postgressP, reactP, reduxP];
+
     const spanishIntro = 'Poseo técnicas de desarrollo web tanto en front-end como back-end usando librerías y frameworks basados en JavaScript. Amo la flexibilidad de los componentes visuales y las diferentes estrategias de manejo de bases de datos. Cada día me asombran las innumerables posibilidades que surgen al usar ambos sistemas para el desarrollo de proyectos eficientes y hermosos.';
     const englishIntro = 'I have skills in web development both in front-end and back-end using JavaScript frameworks and libraries. I love the flexibility of visual components and the different strategies for database management. Every day I am fascinated by the countless possibilities of using both systems to create beautiful and efficient projects.';
 
     const [enter, setEnter] = useState(false);
 
     useEffect(() => {
+        images.forEach((image) => {
+            const img = new Image();
+            img.src = image;
+        });
+
         setTimeout(() => {
             setEnter(true);
         }, 200);

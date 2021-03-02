@@ -8,6 +8,9 @@ export const useStyles = makeStyles((theme) => ({
         zIndex: 1,
         color: 'white',
         overflow: 'hidden',
+        [theme.breakpoints.down('xs')]: {
+            bottom: -5,
+        },
     },
     toolbar: {
         display: 'flex',
